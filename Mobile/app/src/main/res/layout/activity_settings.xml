@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:layout_marginBottom="100px"
+    tools:context=".Activitys.SettingsActivity">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Leaderboard Header -->
+        <RelativeLayout
+            android:id="@+id/titlell"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_weight="1">
+
+            <!-- Profile Text centered -->
+            <TextView
+                android:id="@+id/profileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="140dp"
+                android:layout_centerInParent="true" />
+
+            <!-- Logout Button aligned to the right -->
+        </RelativeLayout>
+
+        <!-- Top 3 Users Section -->
+        <RelativeLayout
+            android:id="@+id/imagell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4D4B4"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/titlell"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_weight="1.2">
+
+            <!-- First Place (Profile) - Centered -->
+            <LinearLayout
+                android:id="@+id/profileimagell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="140dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_background_green"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="B.Simmons"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/usernameemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="B.Simmons@gmail.com"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+                <!-- Rank Section -->
+                <LinearLayout
+                    android:id="@+id/rankSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/rankIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_rank"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/userRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Redeem Button -->
+                <Button
+                    android:id="@+id/redeemButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redeem"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <!-- Logout Button aligned to the right bottom -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/profileimagell"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_margin="16dp"
+                >
+            <Button
+                android:id="@+id/historyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:backgroundTint="@color/black"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:backgroundTint="@color/black"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/addCarButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Car"
+                android:backgroundTint="@color/black"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Leaderboard List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/imagell"
+            app:layout_constraintBottom_toTopOf="@id/bottomnavsection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_weight="1.8"/>
+
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:id="@+id/bottomnavsection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="end"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/recyclerView"
+            android:layout_weight="1.8">
+
+            <ImageView
+                android:id="@+id/iconHome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_home"
+                android:padding="9dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iconTrophy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_trophy"
+                android:padding="9dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iconTravel"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_plus"
+                android:padding="9dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iconGraph"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_graph"
+                android:padding="9dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iconSettings"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_settings"
+                android:padding="9dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

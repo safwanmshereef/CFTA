@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="100px"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".Activitys.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#012E18"
+            android:layout_marginBottom="40dp"
+            tools:ignore="MissingConstraints" />
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:id="@+id/bottomnavsection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bottomsection"
+            android:layout_weight="10"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/iconHome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:src="@drawable/ic_home" />
+
+            <ImageView
+                android:id="@+id/iconTrophy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:src="@drawable/ic_trophy" />
+
+            <ImageView
+                android:id="@+id/iconTravel"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:src="@drawable/ic_plus" />
+
+            <ImageView
+                android:id="@+id/iconGraph"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:src="@drawable/ic_graph" />
+
+            <ImageView
+                android:id="@+id/iconSettings"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:src="@drawable/ic_settings" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

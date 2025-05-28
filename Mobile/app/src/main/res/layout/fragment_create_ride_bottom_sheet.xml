@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/ti"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Create Ride"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/modeOfVehicleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/ti"/>
+
+    <LinearLayout
+        android:id="@+id/ownVehicleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/modeOfVehicleSpinner">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Select Your Vehicle"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+        <Spinner
+            android:id="@+id/ownVehicleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Start Ride"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/ownVehicleLayout"/>
+
+</RelativeLayout>

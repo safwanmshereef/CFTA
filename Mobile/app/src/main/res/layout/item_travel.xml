@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_background">
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_from_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5" />
+
+    <TextView
+        android:id="@+id/tv_to_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50" />
+
+    <TextView
+        android:id="@+id/tv_vehicle_make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make: "
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_vehicle_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model: "
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_co2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CO2: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722" />
+    <TextView
+        android:id="@+id/tv_car_co2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_digital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM:: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+</LinearLayout>
