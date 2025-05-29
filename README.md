@@ -27,7 +27,7 @@ Clone the Repository
 bash
 Copy
 Edit
-git clone https://github.com/govi777/CFTA.git
+git clone https://github.com/safwanmshereef/CFTA.git
 cd CFTA
 Mobile Application
 Open the Mobile/ directory in Android Studio and build the project.
