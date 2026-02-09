@@ -1,4 +1,6 @@
 CFTA
+
+
 CFTA is a project focused on analyzing CO₂ emissions, featuring both mobile and web components.
 
 📁 Project Structure
